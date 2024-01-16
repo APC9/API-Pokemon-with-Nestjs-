@@ -2,6 +2,10 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
+## Nota importante: 
+La configuracion de esta misma API utiiizando Fastify en vez de Express, más la implementación de 
+unit testing y e2e test se encuentran en la rama config-fastify-+-testing
+
 # API POKEMON 
 
 1. Clonar el repositorio
