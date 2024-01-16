@@ -3,8 +3,15 @@
 </p>
 
 ## Nota importante: 
-La configuracion de esta misma API utiiizando Fastify en vez de Express, más la implementación de 
-unit testing y e2e test se encuentran en la rama config-fastify-+-testing
+
+<div style="background-color: darkred; padding: 1px; border-radius: 5px;">
+  <p style="color: #fff;">
+  La configuracion de esta misma API utiiizando Fastify en vez de Express, más la implementación de 
+  unit testing y e2e test se encuentran en la rama config-fastify-+-testing
+  </p>
+</div>
+<br>
+
 
 # API POKEMON 
 
