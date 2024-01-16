@@ -55,3 +55,23 @@ docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
 ## Stack usado
 * MongoDB
 * Nestjs
+
+## configuracion package.json para los test
+ "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src", <!-- cambiar "src"  por "." para que todos los test unitarios enten en la carpeta test-->
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}

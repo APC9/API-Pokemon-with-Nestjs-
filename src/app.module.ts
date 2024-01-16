@@ -15,9 +15,9 @@ import { joiValidationSchema } from './config/joi.config';
       load: [ envConfiguration],
       validationSchema: joiValidationSchema,
     }), // se necesita para las variables de entorno, debe estar primero en la importacion
-    ServeStaticModule.forRoot({
+/*     ServeStaticModule.forRoot({
       rootPath: join(__dirname,'..','public'), // Servir contenido estatico
-      }),
+      }), */
     MongooseModule.forRoot(process.env.MONGO_DB), //conectar la BD
     PokemonModule, CommonModule, SeedModule
   ],

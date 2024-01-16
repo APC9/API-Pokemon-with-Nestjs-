@@ -6,7 +6,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Pokemon } from './entities/pokemon.entity';
 import { CreatePokemonDto } from './dto/create-pokemon.dto';
 import { UpdatePokemonDto } from './dto/update-pokemon.dto';
-import { PaginationDto } from 'src/common/dto/pagination.dto';
+import { PaginationDto } from '../common/dto/pagination.dto';
 
 @Injectable()
 export class PokemonService {
@@ -36,8 +36,8 @@ export class PokemonService {
     return  await this.pokemonModel.find()
                       .limit(limit)
                       .skip(offset)
-                      .sort({ no: 1}) // ordena de forma ascendente la columna no:
-                      .select('-__v') // no muestra la propiedad __v en el objeto 
+                      //.sort({ no: 1}) // ordena de forma ascendente la columna no:
+                      //.select('-__v') // no muestra la propiedad __v en el objeto 
   }
 
   async findOne(term: string) {
